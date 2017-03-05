@@ -13,12 +13,21 @@
     tools:context="com.companionfree.numberanalyzer.MainActivity">
 
     <TextView
+        android:id="@+id/prediction_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="25sp"
+        android:text="@string/main_prediction"
+        android:layout_centerHorizontal="true"/>
+    <TextView
         android:id="@+id/prediction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:layout_marginTop="8dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/prediction_title"/>
 
     <com.simplify.ink.InkView
         android:id="@+id/ink"
@@ -32,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Calculate"
+        android:text="@string/main_calculate"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/ink"/>
 
@@ -41,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Clear"
+        android:text="@string/main_clear"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btn_calc"/>
 
