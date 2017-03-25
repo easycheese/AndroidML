@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         inkView.setColor(ContextCompat.getColor(this, android.R.color.black));
-        inkView.setMinStrokeWidth(13.0f);
-        inkView.setMaxStrokeWidth(13.0f);
+        inkView.setMinStrokeWidth(20.0f);
+        inkView.setMaxStrokeWidth(20.0f);
 
         analyzer = new Analyzer(this);
 
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btn_clear)
     public void onClearClick() {
         inkView.clear();
+        predictionTextView.setText("");
     }
 
     @OnClick(R.id.btn_calc)
@@ -55,8 +56,5 @@ public class MainActivity extends AppCompatActivity {
                 predictionTextView.setText(String.valueOf(prediction));
             }
         });
-
-
     }
-
 }

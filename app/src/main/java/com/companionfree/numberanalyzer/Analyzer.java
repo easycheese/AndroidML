@@ -92,6 +92,7 @@ class Analyzer {
                 int value = result.getMaxIndex() + 1;
                 Log.d(TAG, "Predicted index: " + value);
                 Log.d(TAG, "Predicted prob: " + result.getMaxValue());
+                Log.d(TAG, result.toString());
                 listener.onAnalysisComplete(value);
                 return 0;
             }
